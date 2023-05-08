@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Página de Login </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+ <form>
+    <h1>Insira seu Login</h1>
+    <input type="text" placeholder="Login" id="Login">
+    <input type="password" placeholder="Senha" id="Senha">
+    <input type="submit" value="Entrar" onclick="logar(); return false">
+</form>
+<script>
+    function Logar()
+    {
+        var login = document.getElementById('Login').value;
+        var senha = document.getElementById('Senha').value;
+
+        if (login == "admin" && senha == "admin")
+        {
+            alert('Sucesso');
+        }
+        else
+        {
+            alert('Ops, acesso negado')
+        }
+    }
+</script>
+    </body>
+</html>
